@@ -27,7 +27,8 @@ function testQRCode (req, res) {
   var jungleBook = 'https://ycg.qq.com/career/teams'
 
   // QRCode.QRCodeDraw.color.dark = '#d4d4d4';
-  QRCode.toDataURL(jungleBook, { scale : 20, type : 'dotted' }, function (err, url) {
+  QRCode.toDataURL(jungleBook, { scale : 10, type : 'dotted' }, function (err, url) {
+    // console.log(url)
     if (err) console.log('error: ' + err)
     res.end("<!DOCTYPE html/><html><head><title>node-qrcode</title></head><body><img src='" + url + "'/></body></html>")
   })
