@@ -25,7 +25,15 @@ function testQRCode (req, res) {
   'cub is ours--to kill if we choose."'
 
   // QRCode.QRCodeDraw.color.dark = '#d4d4d4';
-  QRCode.toDataURL(jungleBook, { scale : 10, shape : 'dotted', shapeDegree : 10 }, function (err, url) {
+
+  var options = {
+    scale: 10,
+    shape: 'dotted',
+    shapeDegree: 10,
+    eyesType : 'round'
+  }
+
+  QRCode.toDataURL(jungleBook, options, function (err, url) {
     // console.log(url)
     if (err) console.log('error: ' + err)
     res.end("<!DOCTYPE html/><html><head><title>node-qrcode</title></head><body><img src='" + url + "'/></body></html>")
