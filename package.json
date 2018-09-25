@@ -1,15 +1,14 @@
 {
-  "name": "qrcode",
-  "description": "QRCode / 2d Barcode api with both server side and client side support using canvas",
-  "version": "1.2.2",
-  "author": "Ryan Day <soldair@gmail.com>",
-  "contributors": [
-    "Vincenzo Greco <greco.vincenzo@gmail.com>"
-  ],
+  "name": "node-circle-qrcode",
+  "description": "A node qr code generate inspired by node-qrcode, and it supports circle / dotted qrcode.",
+  "version": "0.0.1",
+  "author": "dufemeng 2314627598@qq.com",
   "keywords": [
     "canvas",
     "qrcode",
-    "barcode"
+    "barcode",
+    "cicle qrcode",
+    "dotted qrcode"
   ],
   "main": "./lib/index.js",
   "browser": {
@@ -23,14 +22,12 @@
     "lib",
     "helper"
   ],
-  "homepage": "http://github.com/soldair/node-qrcode",
+  "homepage": "https://github.com/dufemeng/node-circle-qrcode",
   "license": "MIT",
   "scripts": {
     "lint": "standard",
     "pretest": "npm run lint",
-    "test": "node test.js",
-    "build": "node build.js",
-    "prepublish": "npm run build"
+    "test": "node test.js"
   },
   "bin": {
     "qrcode": "./bin/qrcode"
