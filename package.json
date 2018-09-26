@@ -1,7 +1,7 @@
 {
   "name": "node-circle-qrcode",
   "description": "A node qr code generate inspired by node-qrcode, and it supports circle / dotted qrcode.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "dufemeng 2314627598@qq.com",
   "keywords": [
     "canvas",
