@@ -10,7 +10,8 @@ function testQRCode (req, res) {
     scale: 10,
     shape: 'dotted',
     shapeDegree: 10,
-    eyesType : 'round'
+    eyesType : 'round',
+    thickness : 2
   }
 
   QRCode.toDataURL(lyrics, options, function (err, url) {
